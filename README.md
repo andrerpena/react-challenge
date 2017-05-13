@@ -1,3 +1,1 @@
-# IndieJobs
-
-Freelance job search made ridiculously easy
+# React starter

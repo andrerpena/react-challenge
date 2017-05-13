@@ -1,21 +1,14 @@
 {
-  "name": "indiejobs",
+  "name": "react-challenge",
   "version": "0.0.1",
-  "description": "Freelancer job search made ridiculously easy",
+  "description": "Bluestone react challenge",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development babel-node ./src/server/index.js",
     "start-watch": "cross-env NODE_ENV=development nodemon --exec \"babel-node ./src/server/index.js\"",
     "hot-server": "webpack-dev-server --hot --config ./webpack.config.dev.js",
     "test": "mocha ./test --compilers js:babel-register",
-    "test-db": "cross-env NODE_ENV=development mocha --timeout 15000 --compilers js:babel-register ./test/integration/db/*Spec.js",
-    "lint-fix": "eslint --fix ./src ./test ./tools",
-    "db-install": "cross-env COMMAND=create_dev_dbs PGPASSWORD=indiejobs node ./db/installDb.js",
-    "db-drop": "cross-env COMMAND=drop_dev_dbs PGPASSWORD=indiejobs node ./db/installDb.js",
-    "db-generate": "cross-env COMMAND=generate_scripts PGPASSWORD=indiejobs node ./db/installDb.js",
-    "db-reinstall": "npm run db-drop && npm run db-install",
-    "get-geo-data": "cross-env NODE_ENV=development babel-node ./tools/get-geo-data.js",
-    "save-geo-data": "cross-env NODE_ENV=development babel-node ./tools/save-geo-data"
+    "lint-fix": "eslint --fix ./src ./test ./tools"
   },
   "repository": {
     "type": "git",
@@ -36,21 +29,12 @@
     "cookie-session": "^2.0.0-alpha.1",
     "express": "^4.14.0",
     "font-awesome": "^4.6.3",
-    "immutable": "^3.8.1",
     "massive": "^2.6.0",
     "normalize.css": "^5.0.0",
-    "passport": "^0.3.2",
-    "passport-google-oauth": "^1.0.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-modal": "^1.7.1",
-    "react-redux": "^5.0.3",
-    "react-router": "^3.0.2",
-    "react-router-redux": "^4.0.8",
-    "react-select": "^1.0.0-rc.3",
-    "react-toggle-button": "^2.1.0",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "react-router": "^3.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",

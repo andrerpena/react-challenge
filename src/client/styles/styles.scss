@@ -1,27 +1,3 @@
-@import '_variables';
-@import 'forms.scss';
-@import 'header';
-@import 'search-bar';
-@import 'profile-card';
-@import 'search-result';
-@import 'react-select';
-@import 'login-page';
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $color-dark;
-    color: $color-white;
-
-    .page-wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
